@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width">
     <title>Steven Xu</title>
     <style>
-      html { background: #2e1b13 url(bg-1920.jpg) top center no-repeat; }
+      html { background: #2e1b13 url(bg-1920.jpg) top center no-repeat; height: 100%; }
       @media (min-width: 1920px) {
         html { background-image: url(bg-high.jpg); }
       }
       @media (max-width: 960px) {
         html { background-image: url(bg-portrait.jpg); }
       }
+      @media (max-width: 480px) {
+        html { background-size: cover; background-position: center center; }
+      }
       body { padding-top: 20px; font-family: "Trebuchet MS", Helvetica, sans-serif; }
       .paper { background: #fff url(paper.png) repeat; }
       #card { border-top: 5px solid #ffcc33; text-align: center; 1px solid #eaeaea; box-shadow: 1px 1px 5px rgba(40,40,40,0.5); border-radius: 2px; padding-bottom: 45px; }
-      #card a { color: #dd8822; text-decoration: none }
-      #card a:hover { text-decoration: underline; }
-      @media (min-width: 400px) {
+      @media (min-width: 480px) {
         #card { width: 370px; height: 200px; position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto; padding-bottom: 0; }
       }
+      #card a { color: #dd8822; text-decoration: none }
+      #card a:hover { text-decoration: underline; }
       #name { font-size: 28px; font-weight: normal; margin: 45px 0 7px; }
       #title { font-size: 14px; font-weight: normal; color: #666; text-transform: uppercase; margin: 0 0 18px; }
       #info { font-size: 14px; list-style: none; padding: 0; }
